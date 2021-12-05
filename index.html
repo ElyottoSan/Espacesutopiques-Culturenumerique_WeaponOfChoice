@@ -1,0 +1,274 @@
+<html lang="fr"><script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, viewport-fit=cover">
+    <title>Weapon Of Choice</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="/css/styles.css">
+        <style>
+        #preloader {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgb(255,110,48);
+            background: -moz-radial-gradient(circle, rgba(255,110,48,1) 0%, rgba(178,8,8,1) 100%);
+            background: -webkit-radial-gradient(circle, rgba(255,110,48,1) 0%, rgba(178,8,8,1) 100%);
+            background: radial-gradient(circle, rgba(255,110,48,1) 0%, rgba(178,8,8,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6e30",endColorstr="#b20808",GradientType=1);
+            z-index: 2147483646;
+        }
+        body.matrix #preloader {
+            background: #000000;
+        }
+        #preloader .lds-roller {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        .lds-roller {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 80px;
+        }
+        .lds-roller div {
+            animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+            transform-origin: 40px 40px;
+        }
+        .lds-roller div:after {
+            content: " ";
+            display: block;
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #fff;
+            margin: -4px 0 0 -4px;
+        }
+        .lds-roller div:nth-child(1) {
+            animation-delay: -0.036s;
+        }
+        .lds-roller div:nth-child(1):after {
+            top: 63px;
+            left: 63px;
+        }
+        .lds-roller div:nth-child(2) {
+            animation-delay: -0.072s;
+        }
+        .lds-roller div:nth-child(2):after {
+            top: 68px;
+            left: 56px;
+        }
+        .lds-roller div:nth-child(3) {
+            animation-delay: -0.108s;
+        }
+        .lds-roller div:nth-child(3):after {
+            top: 71px;
+            left: 48px;
+        }
+        .lds-roller div:nth-child(4) {
+            animation-delay: -0.144s;
+        }
+        .lds-roller div:nth-child(4):after {
+            top: 72px;
+            left: 40px;
+        }
+        .lds-roller div:nth-child(5) {
+            animation-delay: -0.18s;
+        }
+        .lds-roller div:nth-child(5):after {
+            top: 71px;
+            left: 32px;
+        }
+        .lds-roller div:nth-child(6) {
+            animation-delay: -0.216s;
+        }
+        .lds-roller div:nth-child(6):after {
+            top: 68px;
+            left: 24px;
+        }
+        .lds-roller div:nth-child(7) {
+            animation-delay: -0.252s;
+        }
+        .lds-roller div:nth-child(7):after {
+            top: 63px;
+            left: 17px;
+        }
+        .lds-roller div:nth-child(8) {
+            animation-delay: -0.288s;
+        }
+        .lds-roller div:nth-child(8):after {
+            top: 56px;
+            left: 12px;
+        }
+        @-webkit-keyframes lds-roller {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @-moz-keyframes lds-roller {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @keyframes lds-roller {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+
+        <link rel="preload" href="https://cdn.pciagent.com/aya/fonts/DidactGothic-Regular.woff2" as="font" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@600&amp;display=swap" rel="stylesheet">
+
+                <link href="https://cdn.pciagent.com/css/jquery-ui.min.css?v=2.98.1" rel="stylesheet" media="all" onload="this.media='all'">
+        <link href="https://cdn.pciagent.com/fonts/font-awesome/css/font-awesome.min.css?v=2.98.1" rel="stylesheet" media="all" onload="this.media='all'">
+
+                <link rel="preload" href="https://cdn.pciagent.com/aya/css/bootstrap.min.css?v=2.98.1" as="style">
+        <link rel="preload" href="https://cdn.pciagent.com/aya/css/style.css?v=2.98.1" as="style">
+        <link href="https://cdn.pciagent.com/aya/css/bootstrap.min.css?v=2.98.1" rel="stylesheet" media="all" onload="this.media='all'">
+        <link id="styleCssLinkId" href="https://cdn.pciagent.com/aya/css/style.css?v=2.98.1" rel="stylesheet" media="all" onload="this.media='all'" onerror="this.media='error'">
+
+
+    <style>
+        .ayap1svg {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 6rem;
+            width: 100%;
+            height: 120px;
+            opacity: 0;
+            stroke: #fff;
+            stroke-dasharray: 0, 350;
+            -webkit-animation: draw 3s infinite forwards;
+            -moz-animation: draw 3s infinite forwards;
+            animation: draw 3s infinite forwards;
+        }
+        @-webkit-keyframes draw {
+            5% {
+                opacity: 1;
+            }
+            90% {
+                stroke-dasharray: 350, 0;
+                opacity: 1;
+            }
+            100% {
+                stroke-dasharray: 350, 0;
+                opacity: 0;
+            }
+        }
+        @-moz-keyframes draw {
+            5% {
+                opacity: 1;
+            }
+            90% {
+                stroke-dasharray: 350, 0;
+                opacity: 1;
+            }
+            100% {
+                stroke-dasharray: 350, 0;
+                opacity: 0;
+            }
+        }
+        @keyframes draw {
+            5% {
+                opacity: 1;
+            }
+            90% {
+                stroke-dasharray: 350, 0;
+                opacity: 1;
+            }
+            100% {
+                stroke-dasharray: 350, 0;
+                opacity: 0;
+            }
+        }
+
+        #particles-js {
+            position: fixed;
+        }
+        #ayaSlideBottomNavigationContainer {
+            position: fixed;
+        }
+
+        .listePuceFirst > * {
+            margin-left: 3rem;
+        }
+
+        .imgMosaicContainer {
+            background-color: black;
+            margin: 0;
+            padding: 3.375px 6px;
+        }
+        .imgMosaicContainer > * {
+            padding: 3.375px 6px;
+        }
+        .imgMosaicContainer img {
+            border-radius: 10px;
+        }
+
+        @media (max-width: 767px) {
+            .ayap1svg {
+                font-size: 4rem;
+                height: 80px;
+            }
+            h1 {
+                font-size: 2.0rem;
+            }
+            h3 {
+                font-size: 1.4rem;
+            }
+            h4 {
+                font-size: 1.2rem;
+            }
+            h5 {
+                font-size: 1.1rem;
+            }
+            .listePuce > * {
+                margin-left: 1rem;
+            }
+            .sms-left span {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body class=" fr">
+
+    <div id="particles-js"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="862" height="959"></canvas></div>
+    <div class="justify-content-center centre">
+        <div class="container mt-3 pb-5">
+          <h3>Il y a une image de l'hôtel qui devient un espace entre la vie et la mort, entre le privé et le public.<br>
+            Avec de multiples références à Psychose, Shining ou encore les mouches de Jean-Paul Sartre.<br>
+            On retrouve également un effet de lévitation comme la crucifixion de Salvador Dali, et tout un ensemble de références rejouées par un seul personnage.<br>
+            Cela ressemble aussi à la photographie des Krims, <i>"Husband and wife owners of a pumpkin cannon, the Day of the World Pumpkin Weigh-Off, Clarence, New York"</i>, 4 Octobre 2004.<br>
+            On y retrouve un espace utopique ouvert, comment ils mettent en forme leurs propres rêves dans l'espace public, les citrouilles signifiant le passage entre le monde des vivants et des morts, comme l'hôtel.
+          </h3>
+        </div>
+    </div>
+
+            <script src="https://cdn.pciagent.com/aya/js/particles.min.js?v=2.98.1"></script>
+        <script src="https://cdn.pciagent.com/aya/js/particlesParams.js?v=2.98.1"></script>
+            <script>
+        particlesParams.interactivity.events.onclick.enable = true;
+
+        const inTouchScreenDevice = "ontouchstart" in document.documentElement;
+        if (inTouchScreenDevice) {
+            particlesParams.interactivity.events.onhover.enable = false;
+        }
+        if ($(window).width() <= 767 || inTouchScreenDevice && screen.height <= 767) {
+            particlesParams.interactivity.modes.push.particles_nb = 1;
+        }
+    </script>
+        <script>
+            particlesJS("particles-js", particlesParams);
+        </script>
+</body>
+</html>
